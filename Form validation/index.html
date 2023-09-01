@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script><!--we can give script in head and can give defer so that it denotes script file to be loaded after 
+    html so that it wont be slow -->
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+    <form action="" id="form"> <!--to give method as post and to make this check n validation in backend we need to give link in form action -->
+        <h1>Register</h1>
+        <div class="inputgroup">
+            <label for="Username">Username</label>
+            <input type="text" id="username" name="username">
+            <div class="error"></div>
+        </div>
+        <div class="inputgroup">
+            <label for="Email">Email</label>
+            <input type="text" id="email" name="email">
+            <div class="error"></div>
+        </div>
+
+        <div class="inputgroup">
+                <label for="Password">Password</label>
+                <input type="password" id="password" name="password">
+                <div class="error"></div>
+        </div>
+        <div class="inputgroup">
+                <label for="Confirmpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword">
+                <div class="error"></div>
+        </div>
+        <button type="submit">Submit</button>
+
+      </form>
+
+    </div>
+    
+</body>
+</html>

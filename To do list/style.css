@@ -1,0 +1,81 @@
+#wrapper{
+    height: 600px;
+    width: 360px;
+    background-color:rgb(40, 38, 38);
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color:#2F0F5D ;
+   margin-top: 200px;
+    border-radius: 10px;
+    
+}
+@media (max-width:768px){
+    #wrapper{
+        max-width: 90%;
+    }
+}
+body,html{
+    background-color:#F5F3C1 ;
+    font-style:normal;
+    font-weight: lighter;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: #F5F3C1;
+    padding-right: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#button{
+    color:#2F0F5D;
+    background-color:#F5F3C1 ;
+    border: none;
+    border-radius:3px;
+    padding: 5px;
+   margin-top: 20px;
+   margin-left: 15px;
+    height: 40px;
+    width: 60px;
+    font:bold;
+    letter-spacing:0.5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 10px, solid,black;
+}
+#input{
+    height: 30px;
+    width: 220px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font: normal;
+    color:black;
+    padding: 5px;
+    }
+
+input:active{
+    border:none;}
+    
+#button:hover{
+        cursor:pointer;
+    
+    }
+
+#todolist{
+    color: white;
+    font-size: medium;
+    margin-top: 10px;
+    
+
+}  
+ #todolist p{
+    margin: 10px; 0px;
+    
+  }
+  
+  #todolist:hover{
+    cursor:pointer;
+   
+  }  

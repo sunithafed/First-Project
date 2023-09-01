@@ -1,0 +1,64 @@
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 20%, rgba(137,75,149,1) 61%);
+    background-attachment: fixed;/* this will fix the linear graident in one image rather than repeating mode*/
+    margin: 0;
+    font-family:'Poppins', sans-serif; 
+
+}
+#form{
+    width:400px;
+     margin:20vh auto 0 auto;/* this will center the form and total screen 20% as top margin, left right as auto)*/
+    background-color: whitesmoke;
+    border-radius: 5px;/* to cut the sharp border*/
+    padding:30px;
+} 
+
+ h1{
+    text-align: center;
+    color:#792099;
+}
+
+#form button{
+    background-color: #792099;
+    color:white;
+    border: 1px solid #792099;/* ifwe use same color as border it will show the button without shaodow with same color*/
+    border-radius: 5px;/*which is used to avoid sharp corner*/
+    padding:10px;
+    margin:20px 0px;/* only for top n bottom*/
+    cursor:pointer;/*hand symbol when cursor placed*/
+    font-size:20px;
+    width:100%; /* to bring button in center with full length*/
+} 
+
+.inputgroup{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px; 
+}
+
+.inputgroup input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid rgb(34,193,195) ;
+}
+
+.inputgroup input:focus{/* this we use when we click input box it shows dark black outline in input box inorder to avoid that we give this outline as 0*/
+    outline:0;
+}
+
+.inputgroup .error{/* only for error class div*/
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
+}
+
+.inputgroup.success input{
+    border-color: #0cc477;
+}
+
+.inputgroup.error input{
+    border-color:rgb(206, 67, 67);
+} 
