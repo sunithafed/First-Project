@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FD Rate Calculator</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Palindrome calculator</h2>
+        <p> A palindrome is a word or phrase that reads the same backwards or forwards eg. level, refer </p>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="write text">
+        </div>
+        <div>
+            <button type="button" onclick="checkPalindrome()">Check Palindrome</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+      
+        function isPalindrome(str) {
+  //Convert the string to lowercase and remove non-alphanumeric characters
+  const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  
+  // Reverse the cleaned string and compare to original
+  const reversed = cleaned.split('').reverse().join('');
+  return cleaned === reversed;
+}
+
+// Example usage
+console.log(isPalindrome("A man, a plan, a canal: Panama")); // true
+console.log(isPalindrome("race car")); // true
+console.log(isPalindrome("hello world")); // false
+
+function checkPalindrome() {
+            // Get the input value
+            const input = document.getElementById('input').value;
+
+            // Check if input is a palindrome
+            const isPal = isPalindrome(input);
+
+            // Update the result element with the output
+            const resultElem = document.getElementById('result');
+            if (isPal) {
+                resultElem.innerHTML = `${input} is a palindrome`;
+            } else {
+                resultElem.innerHTML = `${input} is not a palindrome`;
+            }
+        }
+    </script>
+</body>
+
+</html>
