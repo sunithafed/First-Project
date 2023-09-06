@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Converter</title>
+</head>
+<body>
+    <div class="maindiv">
+        <h2>cm to meter</h2>
+        <div class="input">
+            <input type="text" id="input" placeholder="centimeter value">
+
+        </div>
+        <div class="button">
+            <button type="submit" id="button" onclick="convert()">Convert to Meter</button>
+        </div>
+        <div id="Result"> </div>
+    </div>
+    <script>
+        function convert() {
+        const cmval = Number(document.getElementById("input").value)
+        const meterval = cmval/100
+        const result = document.getElementById("Result")
+        result.innerHTML= meterval+" meter"
+
+        }
+
+    </script>
+    
+</body>
+</html>
